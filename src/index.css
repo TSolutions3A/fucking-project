@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: BankGothic;
+  src: url("/assets/fonts/BankGothic.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: BankGothic;
+  src: url("/assets/fonts/BankGothic-Regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/Inter-Regular.ttf");
+}
+
+:root {
+  /* font-family: Inter,  BankGothic, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  font-synthesis: none;
+  background: #050b21;
+  background-image: url("/assets/images/bg.svg");
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bgCard {
+  background: linear-gradient(99.75deg, #0f42f2 6.63%, #f9e727 100%);
+}
+
+.card {
+  position: relative;
+
+  background-image: url("/assets/images/card.svg");
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.glow {
+  background-image: url("/assets/images/glow.svg");
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg {
+  background: linear-gradient(99.75deg, #0f42f2 6.63%, #f9e727 100%);
+}
+
+.cardsScroll::-webkit-scrollbar {
+  background: black;
+  width: 0;
+  height: 0;
+}
+
+.cardsScroll::-webkit-scrollbar-track {
+  background: black;
+  width: 0;
+  height: 0;
+}
+
+.cardsScroll::-webkit-scrollbar-thumb {
+  background: cornflowerblue;
+  width: 0;
+  height: 0;
+}
+
+@keyframes scrollCards {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.cardsScrollWrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.cardsScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200%;
+  animation: scrollCards 20s linear infinite;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 1.5rem;
+}
+.earning {
+  position: relative;
+
+  background-image: url("/assets/images/card.svg");
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Laguage dropdown */
+.goog-te-gadget .goog-te-combo {
+  padding: 9px;
+  margin: 4px 0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:link,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:visited,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:hover,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd:active {
+  display: none;
+}
+.goog-te-gadget {
+  font-size: 0px !important;
+}
+
+/* Hide the number input spinner controls */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
